@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns:pro="http://www.liquibase.org/xml/ns/pro"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+         http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.1.xsd
+         http://www.liquibase.org/xml/ns/pro http://www.liquibase.org/xml/ns/pro/liquibase-pro-4.1.xsd">
+
+    <changeSet id="inserting-default-persons" author="shane.sturgeon">
+        <insert tableName="persons">
+            <column name="password" value="$2a$10$n44MCfrQb9zfDhqv4cgna.hPMAbVPxKh7Bq.pJ0.PpRWQA/l7Mb9O"/>
+            <column name="email" value="admin.person@website.com"/>
+            <column name="forename" value="admin"/>
+            <column name="surname" value="person"/>
+            <column name="phone" value="1234333"/>
+            <column name="age" value="22"/>
+            <column name="role" value="ADMIN"/>
+            <column name="username" value="admin.person"/>
+            <column name="id" value="bdee8340-7b03-11ec-90d6-0242ac120003"/>
+        </insert>
+
+        <insert tableName="persons">
+            <column name="password" value="$2a$10$n44MCfrQb9zfDhqv4cgna.hPMAbVPxKh7Bq.pJ0.PpRWQA/l7Mb9O"/>
+            <column name="email" value="guest.person@webswte.com"/>
+            <column name="forename" value="guest"/>
+            <column name="surname" value="person"/>
+            <column name="phone" value="1234333"/>
+            <column name="age" value="22"/>
+            <column name="role" value="GUEST"/>
+            <column name="username" value="guest.person"/>
+            <column name="id" value="cdc3a7f0-7b03-11ec-90d6-0242ac120003"/>
+        </insert>
+
+    </changeSet>
+
+</databaseChangeLog>

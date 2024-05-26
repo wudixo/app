@@ -1,0 +1,9 @@
+{
+  "email": "bob.smith@iaido.com",
+  "password" : "password",
+  "username" : "new.username",
+  "forename" : "bob",
+  "surname" : "smith",
+  "phone": 23232342,
+  "dateOfBirth" : "11/01/1995"
+}

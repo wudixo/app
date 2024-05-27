@@ -1,6 +1,7 @@
-FROM openjdk:17
+FROM openjdk:17-jdk-slim
+VOLUME /tmp
 
-COPY target/user-demo-0.0.1-SNAPSHOT.jar  /usr/app/
+COPY target/user-demo-0.0.1-SNAPSHOT.jar  app.jar
 
 WORKDIR /usr/app/
 

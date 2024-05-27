@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: user-demo
+spec:
+  type: LoadBalancer
+  ports:
+  - port: 80
+    targetPort: 8080
+  selector:
+    app: user-demo
